@@ -5,18 +5,20 @@ VARIABLES
 */
 
 /* import-FONTS FAMILY */
-@import url('https://fonts.googleapis.com/css2?family=B612&family=Bungee+Shade&family=Dongle:wght@300&family=Geo&family=Jomhuria&family=Manrope:wght@200&family=Mulish:wght@200&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Nunito+Sans:wght@200&family=Press+Start+2P&family=Wire+One&display=swap&family=Yeseva+One&display=swap&family=Pathway+Gothic+One&family=League+Spartan:wght@100&family=Jost:wght@100');
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Bungee+Shade&family=Dongle:wght@300&family=Geo&family=Jomhuria&family=Manrope:wght@200&family=Mulish:wght@200&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Press+Start+2P&family=Wire+One&display=swap&family=Yeseva+One&display=swap&family=Pathway+Gothic+One&family=League+Spartan:wght@100&family=Jost:wght@100family=Montserrat:wght@100&family=Kumbh+Sans:wght@100');
 
 
 :root {
   /*----------------------------- FONTS FAMILY ------------------------*/
  
-  --font-cara-logo:'Yeseva One', cursive;
-  --font-cara-title:'Pathway Gothic One', sans-serif;         /*chloe navbar        */
-  --font-nunito-sans: 'Nunito Sans', sans-serif;             /*chloe text option 1 */
-  --font-spartan: 'League Spartan', sans-serif;             /*chloe text option 2 */
-  --font-post: 'Jost', sans-serif;                         /*chloe text option 3 */
-  --font-nunito: 'Nunito', sans-serif;                       
+  --ft-cara-logo:'Yeseva One';
+  --ft-cara-subLogo:'Kumbh Sans', sans-serif;
+  --ft-cara-title:'Pathway Gothic One', sans-serif;              /*chloe navbar        */
+  --ft-cara-nunito-sans: 'Nunito Sans', sans-serif;             /*chloe text option 1 */
+  --ft-cara-spartan: 'League Spartan', sans-serif;             /*chloe text option 2 */
+  --ft-cara-post: 'Jost', sans-serif;                         /*chloe text option 3 */
+  --ft-cara-post-kov: 'Montserrat', sans-serif;              /*KOV text option     */
+                     
 
 
   --font-b6: 'B612', sans-serif;
@@ -29,6 +31,7 @@ VARIABLES
   --font-mulish: 'Mulish', sans-serif;
   --font-nunito-sans:'Nunito Sans', sans-serif;
   --font-manrope:'Manrope', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;    
  
 
  /*----------------------------- FONTS SIZES  ---------------------*/
@@ -45,12 +48,13 @@ VARIABLES
   --font-size-36: 3rem;
   --font-size-42: 3.5rem;
   --font-size-50: 4rem;
+  --font-size-70: 7rem;
 
  /*----------------------------- FONTS COLORS ---------------------*/
   
-  --color-primary: #01051e;
-  --color-bg-primary: #FEFEFE;
-  --color-cara-primary: #e0ceb6;
+  --color-txt-primary: #01051e;
+  --color-bg-primary: #fff;
+  --color-cara-primary: #e7af5d;
 
 
   --color-black: #1B1B1B;
@@ -132,7 +136,7 @@ VARIABLES
   --border-w3: 0.3rem;
   --border-w4: 0.4rem;
 
-  /*BORDERS RADIUS*/
+  /*------------------ BORDERS RADIUS ---------------*/
   --border-r025: 0.25rem;
   --border-r1: 1rem;
   --border-r2: 2rem;
@@ -141,11 +145,15 @@ VARIABLES
 
 }
 
+
+
 /*
 =============== 
 GLOBAL STYLES
 ===============
 */
+
+
 
 * {
   transition: background-color .5s ease;
@@ -162,7 +170,7 @@ GLOBAL STYLES
 
 body {
     background: var(--color-bg-primary) !important;
-    color: var(--color-primary) !important;
+    color: var(--color-txt-primary) !important;
     line-height: 1.5;
     font-size: 0.875rem;
   }
@@ -233,4 +241,24 @@ body {
   }
 
 
- 
+  .cara-title {
+    font-family: var(--ft-cara-logo);
+    color: var(--color-cara-primary);
+    font-size: var(--font-size-70);
+    font-weight: 600;
+  }
+
+  .cara-subTitle {
+    font-family: var(--ft-cara-subLogo);
+    color: var(--color-cara-primary);
+    font-size: var(--font-size-30);
+    font-weight: 100;
+  }
+
+  .alert {
+    font-family: var(--ft-cara-subLogo);
+    color: var(--color-zilver);
+    font-size: var(--font-size-13);
+    letter-spacing: var(--light-spacing);
+    font-weight: 100;
+  }
