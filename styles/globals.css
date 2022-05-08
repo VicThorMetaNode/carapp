@@ -5,14 +5,23 @@ VARIABLES
 */
 
 /* import-FONTS FAMILY */
-@import url('https://fonts.googleapis.com/css2?family=B612&family=Bungee+Shade&family=Dongle:wght@300&family=Geo&family=Jomhuria&family=Manrope:wght@200&family=Mulish:wght@200&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Press+Start+2P&family=Wire+One&display=swap&family=Yeseva+One&display=swap&family=Pathway+Gothic+One&family=League+Spartan:wght@100&family=Jost:wght@100family=Montserrat:wght@100&family=Kumbh+Sans:wght@100');
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Bungee+Shade&family=Dongle:wght@300&family=Geo&family=Jomhuria&family=Manrope:wght@200&family=Mulish:wght@200&family=Nunito+Sans:wght@200&family=Nunito:wght@200&family=Press+Start+2P&family=Wire+One&display=swap&display=swap&family=Pathway+Gothic+One&family=League+Spartan:wght@100&family=Jost:wght@100family=Montserrat:wght@100&family=Kumbh+Sans:wght@100&family=Yeseva+One');
+
+@font-face {
+  font-family: glacial;
+  src: url(./fonts/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: yeseva;
+  src: url(./fonts/YesevaOne-Regular.ttf);
+}
 
 
 :root {
   /*----------------------------- FONTS FAMILY ------------------------*/
  
-  --ft-cara-logo:'Yeseva One';
-  --ft-cara-subLogo:'Kumbh Sans', sans-serif;
+  --ft-cara-logo:'yeseva'; 
+  --ft-cara-subLogo:'glacial', sans-serif;
   --ft-cara-title:'Pathway Gothic One', sans-serif;              /*chloe navbar        */
   --ft-cara-nunito-sans: 'Nunito Sans', sans-serif;             /*chloe text option 1 */
   --ft-cara-spartan: 'League Spartan', sans-serif;             /*chloe text option 2 */
@@ -48,6 +57,7 @@ VARIABLES
   --font-size-36: 3rem;
   --font-size-42: 3.5rem;
   --font-size-50: 4rem;
+  --font-size-60: 5.5rem;
   --font-size-70: 7rem;
 
  /*----------------------------- FONTS COLORS ---------------------*/
@@ -245,7 +255,7 @@ body {
     font-family: var(--ft-cara-logo);
     color: var(--color-cara-primary);
     font-size: var(--font-size-70);
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .cara-subTitle {
@@ -256,9 +266,36 @@ body {
   }
 
   .alert {
-    font-family: var(--ft-cara-subLogo);
-    color: var(--color-zilver);
-    font-size: var(--font-size-13);
+    font-family: var(--ft-cara-title);
+    color: var(--color-txt-primary);
+    font-size: var(--font-size-15);
     letter-spacing: var(--light-spacing);
     font-weight: 100;
+    opacity: 0.5;
   }
+
+ .btn-submit {
+   font-family: var(--ft-cara-spartan) !important;
+   font-size: var(--font-size-13) !important;
+   color: var(--color-coconut) !important;
+   font-weight: 100 !important;
+   border: 0.5px solid black !important;
+   padding: 1rem;
+ }
+
+ .fom-form {
+   width:  100%;
+ }
+
+.form-mail {
+  border: 0.5px solid black;
+  height: 30px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-family: var(--ft-cara-spartan);
+  color: var(--color-cadet) ;
+  padding-left: 0.5rem;
+  opacity: 0.3;
+}
