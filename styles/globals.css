@@ -275,22 +275,31 @@ body {
   }
 
  .btn-submit {
+   display:flex;
+   justify-content: flex-end;
+   background-color: var(--color-cara-primary);
    font-family: var(--ft-cara-spartan) !important;
    font-size: var(--font-size-13) !important;
    color: var(--color-coconut) !important;
    font-weight: 100 !important;
    border: 0.5px solid black !important;
+   border-radius: 0px;
    padding: 1rem;
  }
 
  .fom-form {
    width:  100%;
+   display:flex;
+   gap: 0.75rem;
  }
 
 .form-mail {
   border: 0.5px solid black;
-  height: 30px;
+  height: 34px;
   width: 100%;
+  font-family: var(--font-nunito-sans);
+  padding: 1rem;
+  font-weight: 100;
 }
 
 input::placeholder {
@@ -298,4 +307,13 @@ input::placeholder {
   color: var(--color-cadet) ;
   padding-left: 0.5rem;
   opacity: 0.3;
+}
+
+.mail-success {
+  margin-top: 3rem;
+  font-family: var(--ft-cara-title);
+    color: var(--color-cara-primary);
+    font-size: var(--font-size-15);
+    letter-spacing: var(--light-spacing);
+    font-weight: 100;
 }

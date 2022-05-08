@@ -35,22 +35,9 @@ export default function Home() {
 
             <Center>
               <Box mt={7}>
-                <HStack spacing="1rem">
-                  <Box w={[200, 300, 400]} pl={1}>
-                    <FormCustom />
-                  </Box>
-                  <Box>
-                    <Button
-                      bg="#e7af5d"
-                      borderRadius="0px"
-                      border="0.7px"
-                      height="30px"
-                      className="btn-submit"
-                    >
-                      SEND
-                    </Button>
-                  </Box>
-                </HStack>
+                <Box w={[200, 300, 400]} pl={1}>
+                  <FormCustom />
+                </Box>
               </Box>
             </Center>
           </Box>
