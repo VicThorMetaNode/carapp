@@ -1,11 +1,7 @@
 import {
-  Flex,
-  Spacer,
-  HStack,
   Center,
   Box,
   Text,
-  Button,
 } from "@chakra-ui/react";
 
 import FormCustom from "../components/Form";
@@ -26,7 +22,7 @@ export default function Home() {
             </Center>
 
             <Center>
-              <Box mt={7}>
+              <Box mt={[50, 60, 65, 70]}>
                 <Text mt={7} className="alert">
                   COMING SOON
                 </Text>
@@ -35,9 +31,9 @@ export default function Home() {
 
             <Center>
               <Box mt={7}>
-                <Box w={[200, 300, 400]} pl={1}>
-                  <FormCustom />
-                </Box>
+                  <Box w={[200, 300, 400]} pl={1}>
+                    <FormCustom />
+                  </Box>
               </Box>
             </Center>
           </Box>

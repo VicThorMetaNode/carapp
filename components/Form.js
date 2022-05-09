@@ -3,7 +3,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "@chakra-ui/react";
 
 export default function FormCustom() {
-  const [state, handleSubmit] = useForm("xjvljbnq");
+  const [state, handleSubmit] = useForm("mpzbkznp");
 
   if (state.succeeded) {
     return <p className="mail-success">Thanks for joining!</p>;
